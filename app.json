@@ -18,6 +18,7 @@
       "usesAppleSignIn": true
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -73,7 +74,11 @@
       "color": "#E6F4FE"
     },
     "extra": {
-      "router": {}
-    }
+      "router": {},
+      "eas": {
+        "projectId": "b965fcc1-ecaf-4a6b-920d-579d54702df7"
+      }
+    },
+    "owner": "aulgoodmans-organization"
   }
 }

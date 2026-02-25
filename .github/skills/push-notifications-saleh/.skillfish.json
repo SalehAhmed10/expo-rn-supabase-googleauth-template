@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "push-notifications",
+  "owner": "timequity",
+  "repo": "plugins",
+  "path": "craft-coder/mobile/push-notifications",
+  "branch": "main",
+  "sha": "4ca3fff05839f122a3ee6c6bd0191dde09bc1b2c",
+  "source": "manual"
+}

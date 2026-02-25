@@ -1,6 +1,7 @@
 import { HapticTab } from '@/components/HapticTab';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
+import { useNotifications } from '@/hooks/use-notifications';
 import { supabase } from '@/lib/supabase';
 import { Ionicons } from '@expo/vector-icons';
 import type { Session } from '@supabase/supabase-js';
@@ -15,6 +16,8 @@ export default function AppTabsLayout() {
   const segments = useSegments();
   const [isLoading, setIsLoading] = useState(true);
   const [session, setSession] = useState<Session | null>(null);
+
+  useNotifications(session);
 
   useEffect(() => {
     let isMounted = true;

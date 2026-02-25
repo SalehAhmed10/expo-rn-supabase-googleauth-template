@@ -3,6 +3,7 @@ import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
 import { Colors } from '@/constants/theme';
 import { supabase } from '@/lib/supabase';
+import { clearPushToken } from '@/utils/notifications';
 import type { Session } from '@supabase/supabase-js';
 import { useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
@@ -85,6 +86,7 @@ export default function ProfileScreen() {
   const onSignOut = async () => {
     setIsSigningOut(true);
     console.log('[Auth] User signing out:', session?.user?.email);
+    await clearPushToken();
     await supabase.auth.signOut();
     console.log('[Auth] Sign-out complete');
     setIsSigningOut(false);

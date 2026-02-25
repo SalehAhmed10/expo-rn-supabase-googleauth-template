@@ -88,4 +88,4 @@ eas build -p ios --profile production    # App Store build (auto-increments vers
 - **StyleSheet**: Use `StyleSheet.create` — no CSS-in-JS or NativeWind.
 - **Apple Sign-In is required** for iOS App Store submission; do not remove it.
 - **React Compiler** is enabled (`experiments.reactCompiler: true` in `app.json`) — avoid manual `useMemo`/`useCallback` unless profiling shows a need.
-- Skills for common patterns are in `skills/` (expo-api-routes, expo-rn-security, react-native-best-standards, upgrading-expo, **google-auth-supabase**).
+- Skills for common patterns are in `.github/skills/` (expo-api-routes, expo-rn-security, react-native-best-standards, upgrading-expo, **google-auth-supabase-saleh**, **push-notifications-saleh**).

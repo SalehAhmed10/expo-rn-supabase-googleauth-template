@@ -38,6 +38,11 @@ yarn-error.*
 client_secret_*.json
 client_*.plist
 
+# Firebase — commit android/app/google-services.json but ignore root-level downloads
+/google-services.json
+# FCM V1 service account key (sensitive — upload to EAS, never commit)
+*firebase-adminsdk*.json
+
 # EAS / build artifacts
 build/
 
